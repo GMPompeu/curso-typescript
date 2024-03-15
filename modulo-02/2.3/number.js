@@ -1,0 +1,20 @@
+"use strict";
+let num1 = 23.0;
+let num2 = 0x78CF;
+let num3 = 0o577;
+let num4 = 0b110001;
+console.log('Number - Ponto flutuante..:', num1);
+console.log('Number - Hexadecimal..:', num2);
+console.log(typeof (num2));
+console.log('Number - Octal..:', num3);
+console.log(typeof (num3));
+console.log('Number - Binário..:', num4);
+// Bigint
+let big1 = 90071291029n;
+let big = 4294967299n;
+let big2 = 0x200712910021n;
+let big3 = 4294967299n;
+console.log('Bigint..:', big1);
+console.log('Bigint.. Binário..:', big2);
+console.log('Bigint.. Hexa..:', big2);
+console.log('Bigint.. Octal..:', big2);
