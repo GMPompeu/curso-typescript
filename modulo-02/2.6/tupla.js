@@ -21,5 +21,5 @@ console.log(resultado);
 function lerNome(...nome) {
     return [...nome];
 }
-console.log(lerNome('Guilherme', 'Mascarenhas'));
+console.log(lerNome('Gui', 'Mascarenhas'));
 console.log(lerNome('Guilherme', 'Pompeu', 'Mascarenhas'));
