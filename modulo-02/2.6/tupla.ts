@@ -20,3 +20,21 @@ let listafrutas: [string, ...string[]] = ['pera', 'maça', 'goiaba', 'melancia',
 
 let listaFruta2: [number, boolean, ...string[]] = [5, true, ...listafrutas];
 console.log(listaFruta2)
+
+function listarPessoas(nome: string[], idade: number[]){
+    return[...nome, ...idade]
+}
+
+let resultado = listarPessoas(['guilherme', 'guilherme'], [34, 55])
+console.log(resultado)
+
+type Nome = 
+    | [primeiroNome: string, sobreNome:string]
+    | [primeiroNome: string, nomeMeio: string, sobreNome: string];
+
+function lerNome(...nome: Nome){
+    return [...nome]
+}
+
+console.log(lerNome('Guilherme', 'Mascarenhas'))
+console.log(lerNome('Guilherme','Pompeu', 'Mascarenhas'))
