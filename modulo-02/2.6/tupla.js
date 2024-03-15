@@ -11,3 +11,5 @@ pessoa2 = ['Guilherme Pompeu', 'FullStack', 18];
 console.log(pessoa2);
 let listafrutas = ['pera', 'maça', 'goiaba', 'melancia', 'mamão'];
 console.log(...listafrutas);
+let listaFruta2 = [5, true, ...listafrutas];
+console.log(listaFruta2);

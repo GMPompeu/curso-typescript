@@ -17,3 +17,6 @@ console.log(pessoa2);
 
 let listafrutas: [string, ...string[]] = ['pera', 'maça', 'goiaba', 'melancia', 'mamão']
  console.log(...listafrutas)
+
+let listaFruta2: [number, boolean, ...string[]] = [5, true, ...listafrutas];
+console.log(listaFruta2)
