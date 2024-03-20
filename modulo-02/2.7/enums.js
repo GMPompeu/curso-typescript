@@ -18,3 +18,23 @@ var Dia;
     Dia["Domingo"] = "DOM";
 })(Dia || (Dia = {}));
 console.log(Dia.Sabado);
+function comida(c) {
+    return "Comida muito apetitosa";
+}
+console.log(comida("pizza" /* Comida.Pizza */));
+console.log(comida("churrasco" /* Comida.Churrasco */));
+//console.log(comida(5))
+var Tarefa;
+(function (Tarefa) {
+    Tarefa[Tarefa["Todo"] = 0] = "Todo";
+    Tarefa[Tarefa["Progress"] = 1] = "Progress";
+    Tarefa[Tarefa["Done"] = 2] = "Done";
+})(Tarefa || (Tarefa = {}));
+const concluidaTarefa = {
+    id: 1,
+    status: Tarefa.Done,
+    descricao: 'Tarefa concluida com sucesso!'
+};
+if (concluidaTarefa.status === Tarefa.Done) {
+    console.log('Enviar e-mail: Tarefa Concluida!');
+}
